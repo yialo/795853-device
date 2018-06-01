@@ -1,11 +1,7 @@
-/*
-
-.catalog-menu {
+/* .catalog-list {
   visibility: hidden;
 }
 
-.header-catalog>li:hover .catalog-menu {
+.catalog-title:hover + .catalog-list {
   visibility: visible;
-}
-
-*/
+} */

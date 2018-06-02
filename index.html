@@ -10,51 +10,31 @@
     <!-- Шапка сайта -->
 
     <header class="main-header">
-      <p class="site-logo"><a href="#">Device</a></p>
+      <a class="site-logo">Device</a>
 
       <nav class="main-navigaiton">
-
-        <!-- Блок пользовательской навигации -->
-        
-        <div class="navigaiton-user">
-          <div class="navigation-col-left">
-            <input class="header-shop-search" type="search">
-          </div>
-          <div class="navigation-col-right">
-            <ul class="user-auth">
-              <li class="login-link" href="#">Войти</li>
-              <li class="compare-link">Сравнить</li>
-              <li class="cart-link">Корзина</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Блок навигации по сайту -->
-
-        <div class="navigaiton-site">
-          <div class="navigation-col-left">
-            <ul class="catalog">
-              <li>
-                <a href="">Каталог товаров</a>
-                <ul class="catalog-menu">
-                  <li><a href="#">Виртуальная реальность</a></li>
-                  <li><a href="#">Моноподы для селфи</a></li>
-                  <li><a href="#">Экшн-камеры</a></li>
-                  <li><a href="#">Фитнес-браслеты</a></li>
-                  <li><a href="#">Умные часы</a></li>
-                  <li><a href="#">Квадрокоптеры</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="navigation-col-right">
-            <ul class="site-menu">
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Гарантия</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </div>
-        </div>
+          <!-- здесь будет форма поиска-->
+          <ul class="user-navigation">
+            <li class="login-link" href="#">Войти</li>
+            <li class="compare-link">Сравнить</li>
+            <li class="cart-link">Корзина</li>
+          </ul>
+          <ul class="site-navigaiton">
+            <li>
+              <a href="catalog.html">Каталог товаров</a>
+              <ul class="catalog">
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+                <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
       </nav>
     </header>
 
@@ -63,9 +43,9 @@
     <main class="container">
       <h1 class="visually-hidden">Магазин цифровой техники «Девайс»</h1>
       
-      <!-- Промо-раздел -->
-      
+      <!-- Промо-блок -->
       <section class="promo">
+        <h2 class="visually-hidden">Промо-блок</h2>
         <div class="promo-controls">
           <span class="btn btn-promo btn-promo-slide1">Слайд 1</span>
           <span class="btn btn-promo btn-promo-slide2">Слайд 2</span>
@@ -123,8 +103,7 @@
         </ul>
       </section>
       
-      <!-- Раздел популярых товаров -->
-      
+      <!-- Блок популярых товаров -->
       <section class="popular">
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="popular-list">
@@ -137,8 +116,7 @@
         </ul>      
       </section>
       
-      <!-- Сервисный раздел -->
-      
+      <!-- Сервисный блок -->
       <section class="service">
         <h2 class="visually-hidden">Сервис</h2>
         <span class="btn btn-service btn-service-delivery">Доставка</span>
@@ -161,7 +139,6 @@
       </section>
       
       <!-- Блок логотипов -->
-      
       <section class="logotypes">
         <h2 class="logotypes-title">Бренды</h2>
         <ul class="logotypes-list">
@@ -173,7 +150,6 @@
       </section>
       
       <!-- Блок информации о компании -->
-      
       <section class="info">
         <h2 class="info-title">О нас</h2>
         <p class="desc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -183,39 +159,33 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a class="btn" href="#">Подробнее о нас</a>
+        <a class="btn btn-about" href="#">Подробнее о нас</a>
       </section>
       
       <!-- Блок контактной информации -->
-      
       <section class="contact">
         <h2 class="contact-title">Контакты</h2>
         <p class="desc">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <img class="map" src="http://placehold.it/150x100" alt="Карта" width="150" height="100">
-        <span class="btn feedback-btn">Напишите нам</span>
+        <figure class="map">
+          <a href="#"><img src="http://placehold.it/150x100" alt="Карта" width="150" height="100"></a>
+        </figure>
+        <a class="btn btn-feedback" href="#">Напишите нам</a>
       </section>
     </main>
     
-    <!-- Всплывающая карта -->
-    
-    <div class="popup-map">
-      <h2 class="map-title">Подробная карта</h2>
-      <img src="http://placehold.it/150x100" alt="Подробная карта" width="150" height="100">
-    </div>
-    
-    <!-- Всплывающая форма обратной связи -->
-    
-    <!--
-    <div class="popup-feedback">
-      <h2 class="feedback-title">Подробная карта</h2>
-    </div>
-  -->
-
     <!-- Подвал сайта -->
-
     <footer class="main-footer">
       
 
     </footer>
+    
+    <!-- Всплывающая карта -->
+    <div class="popup-map">
+      <h2 class="map-title">Как до нас добраться</h2>
+      <span class="modal-close">x</span>
+    </div>
+    
+    <!-- Здесь будет всплывающая форма обратной связи -->
+  
   </body>
 </html>

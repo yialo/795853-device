@@ -10,31 +10,30 @@
     <!-- Шапка сайта -->
 
     <header class="main-header">
-      <a class="site-logo">Device</a>
+      <a class="header-logo">Device</a>
 
-      <nav class="main-navigaiton">
+      <nav class="site-navigaiton">
           <!-- здесь будет форма поиска-->
-          <ul class="user-navigation">
-            <li class="login-link" href="#">Войти</li>
-            <li class="compare-link">Сравнить</li>
-            <li class="cart-link">Корзина</li>
-          </ul>
-          <ul class="site-navigaiton">
-            <li>
-              <a href="catalog.html">Каталог товаров</a>
-              <ul class="catalog">
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
-                <li><a href="#">Фитнес-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
-                <li><a href="#">Квадрокоптеры</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
+        <ul class="user-navigation">
+          <li class="login-link" href="#">Войти</li>
+          <li class="compare-link">Сравнить</li>
+          <li class="cart-link">Корзина</li>
+        </ul>
+        <ul class="shop-navigation">
+          <li><a href="catalog.html">Каталог товаров</a>
+            <ul class="catalog-list">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -54,7 +53,9 @@
         <ul class="promo-list">
           <li class="promo-item">
             <p class="promo-lead"><b>Делай селфи,<br>как Бен Стиллер!</b></p>
-            <img src="http://placehold.it/150x100" alt="Палка для селфи" width="150" height="100">
+            <figure class="promo-image">
+              <img src="http://placehold.it/150x100" alt="Палка для селфи" width="150" height="100">
+            </figure>
             <p class="desc">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <table>
               <tr>
@@ -72,7 +73,9 @@
           </li>
           <li class="promo-item">
             <p class="promo-lead"><b>Худеем<br>правильно!</b></p>
-            <img src="http://placehold.it/150x100" alt="Фитнес-браслет" width="150" height="100">
+            <figure class="promo-image">
+              <img src="http://placehold.it/150x100" alt="Фитнес-браслет" width="150" height="100">
+            </figure>
             <p class="desc">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <table>
               <tr>
@@ -86,7 +89,9 @@
           </li>
           <li class="promo-item">
             <p class="promo-lead"><b>Порхает как бабочка,<br>жалит как пчела!</b></p>
-            <img src="http://placehold.it/150x100" alt="Квадрокоптер" width="150" height="100">
+            <figure class="promo-image">
+              <img src="http://placehold.it/150x100" alt="Квадрокоптер" width="150" height="100">
+            </figure>
             <p class="desc">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <table>
               <tr>
@@ -167,7 +172,7 @@
         <h2 class="contact-title">Контакты</h2>
         <p class="desc">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <figure class="map">
-          <a href="#"><img src="http://placehold.it/150x100" alt="Карта" width="150" height="100"></a>
+          <a href="#"><img src="http://placehold.it/150x100" alt="Карта офиса по адресу улица Строителей, 15" width="150" height="100"></a>
         </figure>
         <a class="btn btn-feedback" href="#">Напишите нам</a>
       </section>
@@ -175,7 +180,34 @@
     
     <!-- Подвал сайта -->
     <footer class="main-footer">
+      <a class="footer-logo">Device</a>
       
+      <p>г. Москва, ул. Строителей, 15</p>
+      <p>Тел.: +7 (495) 495-95-95</p>
+      
+      <ul class="user-navigation">
+        <li><a href="#">Войти</a></li>
+        <li><a href="#">Сравнить</a></li>
+        <li><a href="#">Корзина</a></li>
+      </ul>
+      
+      <ul class="footer-navigaiton">
+        <li><a href="">Доставка</a></li>
+        <li><a href="">Гарантия</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>
+      
+      <div class="footer-social">
+        <ul>
+          <li><a href="#" class="social">Facebook</a></li>
+          <li><a href="#" class="social">Instagram</a></li>
+          <li><a href="#" class="social">Twitter</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-copyright">
+        <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="HTML Academy | Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1"></a>
+      </div>
 
     </footer>
     

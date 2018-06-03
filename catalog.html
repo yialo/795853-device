@@ -6,11 +6,12 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="header-logo" href="index.html">Device</a>
+      <a class="main-header-logo" href="index.html">DEVICE</a>
       <nav class="site-navigaiton">
         <!-- здесь будет форма поиска-->
         <ul class="user-navigation">
-          <li class="login-link" href="#">Войти</li>
+          <li class="login-link" href="#">Валентин Петухов</li>
+          <li class="logout-link" href="#">Выйти</li>
           <li class="compare-link">Сравнить</li>
           <li class="cart-link">Корзина</li>
         </ul>
@@ -33,68 +34,91 @@
     </header>
     <main class="container">
       <h1 class="page-title">Моноподы для селфи</h1>
-      <p class="breadcrumbs">
-        <a href="index.html">Главная</a> &gt;
-        <a href="#">Каталог товаров</a> &gt;
-        <a href="#">Моноподы для селфи</a>
-      </p>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#">Каталог товаров</a></li>
+        <li>Моноподы для селфи</li>
+      </ul>
 
-      <section class="sidebar">
-        <p>Фильтр:</p>
+      <section class="filter">
+        <h2 class="filter-title">Фильтр:</h2>
         <!-- Здесь будет форма фильтрации -->
       </section>
       
-      <header class="catalog-sorting">
-        Сортировка:
-        <span class="btn btn-sorting btn-sorting-price">По цене</span>
-        <span class="btn btn-sorting btn-sorting-type">По типу</span>
-        <span class="btn btn-sorting btn-sorting-rating">По популяности</span>
-        <span class="btn btn-sorting btn-sorting-increasing">По возрастанию</span>
-        <span class="btn btn-sorting btn-sorting-decreasing">По убыванию</span>
-      </header>
-      
-      <section class="catalog">
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <img class="product-image" src="http://placehold.it/150x100" alt="Любительская селфи-палка">
-            <h3 class="product-title">Любительская селфи-палка</h3>
-            <span class="product-price">500 руб.</span>
-          </li>
-          <li class="catalog-item">
-            <img class="product-image" src="http://placehold.it/150x100" alt="Профессиональная селфи-палка">
-            <h3 class="product-title">Профессиональная селфи-палка</h3>
-            <span class="product-price">1500 руб.</span>
-          </li>
-          <li class="catalog-item">
-            <img class="product-image" src="http://placehold.it/150x100" alt="Непотопляемая селфи-палка">
-            <h3 class="product-title">Непотопляемая селфи-палка</h3>
-            <span class="product-price">2500 руб.</span>
-          </li>
-          <li class="catalog-item">
-            <img class="product-image" src="http://placehold.it/150x100" alt="Селфи-палка «Следуй за мной»">
-            <h3 class="product-title">Селфи-палка «Следуй за мной»</h3>
-            <span class="product-price">4900 руб.</span>
-          </li>
+      <section class="sorting">
+        <h2 class="sorting-title">Сортировка:</h2>
+        <ul class="sorting-type-list">
+          <li class="sotring-type-current"><a class="btn btn-sorting btn-sorting-price">По цене</a></li>
+          <li><a class="btn btn-sorting btn-sorting-type">По типу</a></li>
+          <li><a class="btn btn-sorting btn-sorting-rating">По популяности</a></li>
+        </ul>
+        <ul class="sorting-direction-list">
+          <li class="sorting-direction-current"><a class="btn btn-sorting btn-sorting-increasing">По возрастанию</a></li>
+          <li><a class="btn btn-sorting btn-sorting-decreasing">По убыванию</a></li>
         </ul>
       </section>
-
-      <footer class="catalog-navigation">
-        <a href="#">Назад</a>
-        <span class="btn btn-navigaiton btn-navigation-page1">1</span>
-        <span class="btn btn-navigaiton btn-navigation-page2">2</span>
-        <span class="btn btn-navigaiton btn-navigation-page3">3</span>
-        <a href="#">Вперёд</a>
-      </footer>
+      
+      <section class="catalog">
+        <h2 class="visually-hidden">Список палок для селфи</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3 class="product-title">
+              <a href="#">Любительская селфи-палка</a>
+            </h3>
+            <p>
+              <img class="product-image" src="http://placehold.it/150x100" alt="Любительская селфи-палка">
+              <span class="product-price">500 руб.</span>
+            </p>
+          </li>
+          <li class="catalog-item">
+            <h3 class="product-title">
+              <a href="#">Профессиональная селфи-палка</a>
+            </h3>
+            <p>
+              <img class="product-image" src="http://placehold.it/150x100" alt="Профессиональная селфи-палка">
+              <span class="product-price">1500 руб.</span>
+            </p>
+          </li>
+          <li class="catalog-item">
+            <h3 class="product-title">
+              <a href="#">Непотопляемая селфи-палка</a>
+            </h3>
+            <p>
+              <img class="product-image" src="http://placehold.it/150x100" alt="Непотопляемая селфи-палка">
+              <span class="product-price">2500 руб.</span>
+            </p>
+          </li>
+          <li class="catalog-item">
+            <h3 class="product-title">
+              <a href="#">Селфи-палка «Следуй за мной»</a>
+            </h3>
+            <p>
+              <img class="product-image" src="http://placehold.it/150x100" alt="Селфи-палка «Следуй за мной»">
+              <span class="product-price">4900 руб.</span>
+            </p>
+          </li>
+        </ul>
+        <p class="pagination">
+          <ul class="pagination-list">
+            <li class="pagination-item-current"><a class="btn btn-pagination btn-pagination-page1">1</a></li>
+            <li class="pagination-item"><a class="btn btn-pagination btn-pagination-page2">2</a></li>
+            <li class="pagination-item"><a class="btn btn-pagination btn-pagination-page3">3</a></li>
+          </ul>
+          <span class="btn btn-pagination btn-pagination-back">Назад</span>
+          <span class="btn btn-pagination btn-pagination-forward">Вперёд</span>
+        </p>
+      </section>
     </main>
     
     <footer class="main-footer">
-      <a class="footer-logo">Device</a>
+      <a class="main-footer-logo">DEVICE</a>
       <p>г. Москва, ул. Строителей, 15</p>
       <p>Тел.: +7 (495) 495-95-95</p>
       <ul class="user-navigation">
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
+        <li class="login-link" href="#">Валентин Петухов</li>
+        <li class="logout-link" href="#">Выйти</li>
+        <li class="compare-link">Сравнить</li>
+        <li class="cart-link">Корзина</li>
       </ul>
       <ul class="footer-navigaiton">
         <li><a href="">Доставка</a></li>

@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <p class="main-header-logo">DEVICE</p>
-      <nav class="site-navigaiton">
+      <nav class="site-navigation">
         <!-- здесь будет форма поиска-->
         <ul class="user-auth">
           <li class="user-auth-item" href="#">Войти</li>
@@ -44,7 +44,7 @@
         <span class="btn btn-promo btn-promo-slide3">Слайд 3</span>
         <ul class="promo-list">
           <li class="promo-item">
-            <img class="promo-image" src="http://placehold.it/150x100" alt="Палка для селфи" width="150" height="100">
+            <img class="promo-image" src="img/slider-1.png" alt="Палка для селфи" width="384" height="486">
             <p class="promo-lead">Делай селфи, как Бен Стиллер!</p>
             <p class="desc promo-desc">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <table>
@@ -62,7 +62,7 @@
             <a class="btn more" href="#">Подробнее</a>
           </li>
           <li class="promo-item">
-            <img class="promo-image" src="http://placehold.it/150x100" alt="Фитнес-браслет" width="150" height="100">
+            <img class="promo-image" src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
             <p class="promo-lead">Худеем правильно!</p>
             <p class="desc promo-desc">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <table>
@@ -76,7 +76,7 @@
             <a class="btn more" href="#">Подробнее</a>
           </li>
           <li class="promo-item">
-            <img class="promo-image" src="http://placehold.it/150x100" alt="Квадрокоптер" width="150" height="100">
+            <img class="promo-image" src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
             <p class="promo-lead">Порхает как бабочка, жалит как пчела!</p>
             <p class="desc promo-desc">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <table>
@@ -130,19 +130,27 @@
       <section class="logotypes">
         <h2 class="logotypes-title">Бренды</h2>
         <ul class="logotypes-list">
-          <li class="logotypes-item"><a href="#"><img src="http://placehold.it/150x100" alt="Бренд 1" width="150" height="100"></a></li>
-          <li class="logotypes-item"><a href="#"><img src="http://placehold.it/150x100" alt="Бренд 2" width="150" height="100"></a></li>
-          <li class="logotypes-item"><a href="#"><img src="http://placehold.it/150x100" alt="Бренд 3" width="150" height="100"></a></li>
-          <li class="logotypes-item"><a href="#"><img src="http://placehold.it/150x100" alt="Бренд 4" width="150" height="100"></a></li>
+          <li class="logotypes-item">
+            <img src="img/logo-1.png" alt="Бренд 1" width="260" height="100">
+          </li>
+          <li class="logotypes-item">
+            <img src="img/logo-2.png" alt="Бренд 2" width="260" height="100">
+          </li>
+          <li class="logotypes-item">
+            <img src="img/logo-3.png" alt="Бренд 3" width="260" height="100">
+          </li>
+          <li class="logotypes-item">
+            <img src="img/logo-4.png" alt="Бренд 4" width="260" height="100">
+          </li>
         </ul>
       </section>
       
       <section class="reference">
         <h2 class="visually-hidden">Справочная информация</h2>
-        <div>
-          <h3 class="reference-title">О нас</h3>
-          <p class="desc reference-desc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p class="desc reference-desc">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <div class="reference-about">
+          <h3 class="reference-title reference-about-title">О нас</h3>
+          <p class="desc reference-desc reference-about-desc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="desc reference-desc reference-about-desc">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
           <ul>
             <li>Деловые Линии</li>
             <li>Автотрейдинг</li>
@@ -150,41 +158,18 @@
           </ul>
           <a class="btn btn-reference btn-reference-about" href="#">Подробнее о нас</a>
         </div>
-        <div>
-          <h3 class="reference-title">Контакты</h3>
-          <p class="desc reference-desc">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <div class="reference-contact">
+          <h3 class="reference-title reference-contact-title">Контакты</h3>
+          <p class="desc reference-desc reference-contact-desc">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <figure class="map">
             <a href="#">
-              <img src="http://placehold.it/150x100" alt="Карта офиса по адресу улица Строителей, 15" width="150" height="100">
+              <img src="img/map.png" alt="Карта офиса по адресу улица Строителей, 15" width="560" height="222">
             </a>
           </figure>
-          <a class="btn btn-reference" href="#">Напишите нам</a>
+          <a class="btn btn-reference btn-reference-contact" href="#">Напишите нам</a>
         </div>
       </section>
     </main>
-    
-    <section class="reference">
-    <h2 class="visually-hidden">Справочная информация</h2>
-      <div class="about">
-        <h3 class="about-title">О нас</h3>
-        <p class="desc about-desc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p class="desc about-desc">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul>
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="btn btn-about" href="#">Подробнее о нас</a>
-      </div>
-      <div class="contact">
-        <h3 class="contact-title">Контакты</h3>
-        <p class="desc contact-desc">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <figure class="map">
-          <a href="#"><img src="http://placehold.it/150x100" alt="Карта офиса по адресу улица Строителей, 15" width="150" height="100"></a>
-        </figure>
-        <a class="btn btn-feedback" href="#">Напишите нам</a>
-      </div>
-    </section>
     
     <footer class="main-footer">
       <a class="main-footer-logo">DEVICE</a>
@@ -198,7 +183,7 @@
         <li class="user-shopping-item">Сравнить</li>
         <li class="user-shopping-item">Корзина</li>
       </ul>
-      <ul class="footer-navigaiton">
+      <ul class="footer-navigation">
         <li><a href="">Доставка</a></li>
         <li><a href="">Гарантия</a></li>
         <li><a href="">Контакты</a></li>
@@ -209,7 +194,7 @@
         <li><a href="#" class="social">Twitter</a></li>
       </ul>
       <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-        <img class="copyright-logo" src="http://placehold.it/150x100" alt="HTML Academy | Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
+        <img class="copyright-logo" src="img/logo-html.png" alt="HTML Academy | Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1" width="27" height="35">
       </a>
     </footer>
     

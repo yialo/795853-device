@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <a class="main-header-logo" href="index.html">DEVICE</a>
-      <nav class="site-navigaiton">
+      <nav class="site-navigation">
         <!-- здесь будет форма поиска-->
         <ul class="user-auth">
           <li class="user-auth-item" href="#">Валентин Петухов</li>
@@ -43,8 +43,7 @@
       </ul>
 
       <section class="filter">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <span class="denotion filter-denotion">Фильтр:</span>
+        <h2 class="filter-title">Фильтр:</h2>
         <!-- Здесь будет форма фильтрации -->
       </section>
       
@@ -65,28 +64,28 @@
         <h2 class="visually-hidden">Список моноподов</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <img class="product-image" src="http://placehold.it/150x100" alt="Любительская селфи-палка">
+            <img class="product-image" src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
             <h3 class="product-title">
               <a href="#">Любительская селфи-палка</a>
             </h3>
             <span class="product-price">500 руб.</span>
           </li>
           <li class="catalog-item">
-            <img class="product-image" src="http://placehold.it/150x100" alt="Профессиональная селфи-палка">
+            <img class="product-image" src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
             <h3 class="product-title">
               <a href="#">Профессиональная селфи-палка</a>
             </h3>
             <span class="product-price">1500 руб.</span>
           </li>
           <li class="catalog-item">
-            <img class="product-image" src="http://placehold.it/150x100" alt="Непотопляемая селфи-палка">
+            <img class="product-image" src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
             <h3 class="product-title">
               <a href="#">Непотопляемая селфи-палка</a>
             </h3>
             <span class="product-price">2500 руб.</span>
           </li>
           <li class="catalog-item">
-            <img class="product-image" src="http://placehold.it/150x100" alt="Селфи-палка «Следуй за мной»">
+            <img class="product-image" src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
             <h3 class="product-title">
               <a href="#">Селфи-палка «Следуй за мной»</a>
             </h3>
@@ -96,7 +95,10 @@
       </section>
       <div class="pagination">
         <ul class="pagination-list">
-          <li class="pagination-item-current">
+          <li class="pagination-item">
+            <a class="btn btn-pagination btn-pagination-backward disabled">Назад</a>
+          </li>
+          <li class="pagination-item pagination-item-current">
             <a class="btn btn-pagination btn-pagination-page1" href="#">1</a>
           </li>
           <li class="pagination-item">
@@ -105,9 +107,10 @@
           <li class="pagination-item">
             <a class="btn btn-pagination btn-pagination-page3" href="#">3</a>
           </li>
+          <li class="pagination-item">
+            <a class="btn btn-pagination btn-pagination-forward">Вперед</a>
+          </li>
         </ul>
-        <span class="btn btn-pagination btn-pagination-backward">Назад</span>
-        <span class="btn btn-pagination btn-pagination-forward">Вперед</span>
       </div>
     </main>
     
@@ -123,7 +126,7 @@
         <li class="user-shopping-item">Сравнить</li>
         <li class="user-shopping-item">Корзина</li>
       </ul>
-      <ul class="footer-navigaiton">
+      <ul class="footer-navigation">
         <li><a href="">Доставка</a></li>
         <li><a href="">Гарантия</a></li>
         <li><a href="">Контакты</a></li>
@@ -134,7 +137,7 @@
         <li><a href="#" class="social">Twitter</a></li>
       </ul>
       <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-        <img class="copyright-logo" src="http://placehold.it/150x100" alt="HTML Academy | Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
+        <img class="copyright-logo" src="img/logo-html.png" alt="HTML Academy | Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1" width="27" height="35">
       </a>
     </footer>
   </body>

@@ -225,7 +225,8 @@ a {
   background-color: transparent;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background-color: #f0c52e;
 }
 

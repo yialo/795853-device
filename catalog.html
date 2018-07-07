@@ -5,7 +5,6 @@
     <title>Моноподы для селфи – Каталог товаров | HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/outline.css"> -->
   </head>
   <body class="inner-page">
     <header class="header">
@@ -15,8 +14,8 @@
           <div class="user-navigation">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get" name="search-data">
               <label class="visually-hidden" for="search">Поиск по сайту</label>
-              <input class="search-field" type="search" name="search" id="search" placeholder="Поиск по сайту">
-                <button class="search-btn" type="submit">Найти</button>
+              <input class="search-field" type="search" name="search" id="search" placeholder="Поиск по сайту" required>
+              <button class="search-btn" type="submit"><span class="btnfix">Найти</span></button>
             </form>
             <ul class="auth-menu header-auth-menu">
               <li class="auth-item header-auth-item">
@@ -101,15 +100,19 @@
               <form class="filter-form" action="https://echo.htmlacademy.ru" method="get" name="filter-data">
                 <fieldset class="filter-group filter-price">
                  <legend class="filter-group-title">Стоимость</legend>
-                   <div class="filter-scale">
-                    <div class="filter-bar"></div>
-                    <div class="filter-toggle filter-toggle-min"></div>
-                    <div class="filter-toggle filter-toggle-max"></div>
-                   </div>
-                   <div class="filter-price-mark">
-                     <span class="filter-price-label">от 0</span>
-                     <span class="filter-price-label">до 5000</span>
-                   </div>
+                 <div class="filter-scale">
+                   <div class="filter-bar"></div>
+                   <button class="filter-toggle filter-toggle-min" type="button">
+                     <span class="visually-hidden">Минимальная стоимость</span>
+                   </button>
+                   <button class="filter-toggle filter-toggle-max" type="button">
+                     <span class="visually-hidden">Максимальная стоимость</span>
+                   </button>
+                 </div>
+                 <div class="filter-price-control">
+                   <label class="filter-price-label">от <input class="filter-price-input" type="text" name="min-price" value="0" readonly></label>
+                   <label class="filter-price-label">до <input class="filter-price-input" type="text" name="max-price" value="5000" readonly></label>
+                  </div>
                 </fieldset>
                 <fieldset class="filter-group filter-color">
                   <legend class="filter-group-title">Цвет</legend>
@@ -149,7 +152,7 @@
                     </li>
                   </ul>
                 </fieldset>
-                <button class="btn follow-btn filter-btn" type="submit">Показать</button>
+                <button class="btn follow-btn filter-btn" type="submit"><span class="btnfix">Показать</span></button>
               </form>
           </section>
 
@@ -296,7 +299,7 @@
               <a class="site-menu-link" href="#">Контакты</a>
             </li>
           </ul>
-          <p class="footer-details">Тел.: +7 (495) 495-95-95</p>
+          <p class="footer-details"><a class="edgefix">Тел.: +7 (495) 495-95-95</a></p>
         </div>
         <ul class="footer-social">
           <li class="social-item">

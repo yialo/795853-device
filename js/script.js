@@ -12,28 +12,28 @@ var modalOverlay = document.querySelector('.modal-overlay');
 
 linkFeedback.addEventListener('click', function(evt) {
   evt.preventDefault();
-  modalFeedback.classList.add('show');
-  modalOverlay.classList.add('show');
+  modalFeedback.classList.add('modal-show');
+  modalOverlay.classList.add('modal-show');
   modalFullName.focus();
 });
 
 modalFeedbackClose.addEventListener('click', function(evt) {
   evt.preventDefault();
-  modalFeedback.classList.remove('show');
-  modalOverlay.classList.remove('show');
+  modalFeedback.classList.remove('modal-show');
+  modalOverlay.classList.remove('modal-show');
   modalFeedback.classList.remove('modal-error');
 });
 
 linkMap.addEventListener('click', function(evt) {
   evt.preventDefault();
-  modalMap.classList.add('show');
-  modalOverlay.classList.add('show');
+  modalMap.classList.add('modal-show');
+  modalOverlay.classList.add('modal-show');
 });
 
 modalMapClose.addEventListener('click', function(evt) {
   evt.preventDefault();
-  modalMap.classList.remove('show');
-  modalOverlay.classList.remove('show');
+  modalMap.classList.remove('modal-show');
+  modalOverlay.classList.remove('modal-show');
 });
 
 modalForm.addEventListener('submit', function(evt) {
@@ -47,11 +47,11 @@ modalForm.addEventListener('submit', function(evt) {
 
 window.addEventListener('keydown', function(evt) {
   if (evt.keyCode === 27) {
-    if (modalOverlay.classList.contains('show')) {
+    if (modalOverlay.classList.contains('modal-show')) {
       evt.preventDefault();
-      modalFeedback.classList.remove('show');
-      modalMap.classList.remove('show');
-      modalOverlay.classList.remove('show');
+      modalFeedback.classList.remove('modal-show');
+      modalMap.classList.remove('modal-show');
+      modalOverlay.classList.remove('modal-show');
     }
   }
 });

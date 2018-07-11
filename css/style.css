@@ -1596,6 +1596,8 @@ a {
 }
 
 .map-link {
+  position: relative;
+
   display: block;
   width: 560px;
   height: 222px;
@@ -1604,7 +1606,20 @@ a {
   background-color: #e9e9e9;
 }
 
+.map-source {
+  position: relative;
+  z-index: 1;
+
+  border-style: none;
+}
+
 .map-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  display: block;
   width: 560px;
   height: 222px;
 }
@@ -2599,48 +2614,11 @@ a {
           box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.2);
 }
 
-.modal-feedback {
-  top: 20px;
-
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-top: 87px;
-  padding-right: 100px;
-  padding-left: 100px;
-
-  background-color: #ffffff;
-}
-
-.modal-map {
-  top: 50%;
-
-  height: 559px;
-  margin-top: -279px;
-
-  background-color: #e5e3df;
-}
-
-.modal-map-image {
-  display: block;
-  width: 960px;
-  height: 559px;
-}
-
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-
-  display: none;
-  width: 100%;
-  height: 100%;
-}
-
 .modal-close-btn {
   position: absolute;
   top: 22px;
   right: 22px;
+  z-index: 3;
 
   width: 55px;
   height: 55px;
@@ -2662,6 +2640,45 @@ a {
 
 .modal-close-btn:active {
   opacity: 0.3;
+}
+
+.modal-map {
+  top: 50%;
+
+  height: 559px;
+  margin-top: -279px;
+
+  background-color: #e5e3df;
+}
+
+.modal-map-source {
+  position: relative;
+  z-index: 2;
+
+  border-style: none;
+}
+
+.modal-map-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  display: block;
+  width: 960px;
+  height: 559px;
+}
+
+.modal-feedback {
+  top: 100px;
+
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 87px;
+  padding-right: 100px;
+  padding-left: 100px;
+
+  background-color: #ffffff;
 }
 
 .feedback-form {
